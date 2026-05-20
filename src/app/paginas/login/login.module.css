@@ -1,0 +1,75 @@
+.logo {
+    width: 175px;
+    margin: 2rem auto 1rem auto;
+}
+
+.formDescription {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #61876E;
+    text-align: center;
+    line-height: 1.25;
+}
+
+.login {
+    background: white;
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.login div {
+    width: 100%;
+}
+.entranceOptions {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.entranceOptions button {
+    margin: 0 auto;
+    border: 3px solid #1464BF;
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    background: #1464BF;
+    cursor: pointer;
+    color: white;
+    padding: .35rem;
+    transition: .5s;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.entranceOptions button:hover {
+    border: 3px solid #1464bf;
+    background-color: white;
+    color: #1464BF;
+}
+
+.entranceOptions p {
+    font-size: .85rem;
+    color: black;
+}
+
+.entranceOptions span {
+    font-weight: bold;
+    color: #61876E;
+}
+
+.entranceOptions span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .login {
+        width: 100%;
+    }
+}

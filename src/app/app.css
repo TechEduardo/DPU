@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+  
+body{
+    background-color: #efefef !important;
+}
+
+html, body {
+    height: 100%;
+}
+
+h1, h2, h3, h4, p, tr, td, th {
+    margin: 0px;
+}
+
+ul, li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.animeRight {
+    opacity: 0;
+    transform: translateX(-40px);
+    animation: animeRight .3s forwards;
+}
+
+@keyframes animeRight {
+    to {
+        opacity: 1;
+        transform: initial;
+    }
+}
+
+.background-section {
+    /* background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,0.7)), url("https://conexaoplaneta.com.br/wp-content/uploads/2018/12/mapa-revela-areas-garimpo-ilegal-areas-conservacao-amazonia-conexao-planeta.jpg"); */
+    background-image: url("../OGES.png");
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    color: white;
+}
+
+.background-full {
+    height: 100%;
+}
+
+.background-initial {
+    height: 90vh;
+}
+
+.container {
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.container-internal {
+    margin-top: 20px;
+    width: 100%;
+    padding: 3rem;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    position: relative;
+    display: block;
+    margin-bottom: 2.75rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    width: 7rem;
+    height: 5px;
+    background: #053616;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+}
+
+
+
+@media (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+    .background-initial {
+        height: 90vh;
+    }
+}
+
+@media (max-width: 800px) {
+    .background-section {
+        padding: 15vh 0 0 0;
+    }
+    .container {
+        width: 100%;
+    }
+    .background-initial {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 400px) {
+    .background-initial {
+        height: 100vh;
+    }
+}

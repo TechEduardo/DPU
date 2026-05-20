@@ -1,0 +1,177 @@
+.sectionTitle {
+    width: 100%;
+    line-height: 1.15;
+    margin-bottom: 2rem;
+}
+
+/* .imagemFundo {
+    background-image: url("../../../6.jpeg");
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+} */
+
+.title {
+    font-size: 2.75rem;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+}
+
+.title, .subtitle {
+    text-align: center;
+}
+
+.formContainer {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.formDescription {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.25;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.form div {
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.tooltip {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.formButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+ 
+.formButton button, .selectImagesButton{
+    border: 3px solid #1464BF;
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    background: #1464BF;
+    cursor: pointer;
+    color: white;
+    padding: .35rem;
+    transition: .5s;
+}
+
+.formButton button:first-child {
+    width: initial;
+}
+
+.formButton button:hover, .selectImagesButton:hover {
+    border: 3px solid #1464bf;
+    background-color: transparent;
+    color: #1464BF;
+}
+
+.selectImagesButton {
+    margin: 0 auto;
+}
+
+.selectImagesButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.isDisabled {
+    pointer-events: none !important;
+    cursor: not-allowed !important;
+    opacity: .5 !important;
+}
+
+.selectedImagesContainer h3{
+    background: #efefef;
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+.selectedImages {
+    padding: .5rem;
+    
+}
+
+.selectedImage {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.selectedImage :last-child {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 3rem;
+}
+
+.sizeError {
+    color: red;
+}
+
+.buttonRemoveImage {
+    cursor: pointer;
+}
+
+.sizeError {
+    margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+    .formContainer {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .formDescription {
+        font-size: 1.25rem;
+    }
+
+    .form {
+        display: block;
+    }
+
+    .form div {
+        margin: .25rem 0;
+    }
+
+    .grid {
+        display: block;
+    }
+    
+    .formButton {
+        padding: 1rem 0 0 0;
+    }
+
+    .formButton button {
+        font-size: .8rem;
+        line-height: 1.5;
+    }
+}

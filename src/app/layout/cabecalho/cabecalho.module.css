@@ -1,0 +1,153 @@
+.cabecalho {
+    z-index: 10;
+}
+
+.header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #053616;
+    text-decoration: none;
+}
+
+.logo {
+    text-decoration: none;
+    margin-right: 5;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menuContainer {
+    width: 100%;
+    height: 7vh;
+}
+
+.menuGrid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 3rem;
+}
+
+.itemsGrid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.menuItem {
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+}
+
+.title {
+    font-size: 2.75rem;
+    font-weight: bold;
+}
+
+.link {
+    text-decoration: none;
+    margin-right: 5;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.link::before {
+    content: '';
+    height: 100%;
+    left: -1.5rem;
+    position: absolute;
+    border: 1px solid white;
+}
+
+.link:hover {
+    color: white;
+}
+
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown .dropdownBtn {
+    font-size: 1rem;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: .875rem 1rem;
+    background-color: inherit;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 11rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdownContent a {
+    color: black;
+    padding: .75rem 1rem;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    word-break: normal;
+}
+
+.dropdownContent a:hover {
+    background-color: #efefef;
+    color: #053616;
+}
+
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0rem;
+    /* display: block; */
+}
+
+@media (max-width: 800px) {
+    .cabecalho {
+        position: fixed; 
+        text-decoration: dashed;
+        width: 100%;
+        flex-grow: 0;
+        position: fixed;
+        z-index: 1;
+    }
+    .header a {
+        font-size: 1.75rem;
+    }
+    .header svg {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .cabecalho {
+        position: fixed; 
+        text-decoration: dashed;
+        width: 100%;
+        flex-grow: 0;
+        position: fixed;
+        z-index: 1;
+    }
+}

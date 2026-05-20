@@ -1,0 +1,57 @@
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    width: 40rem;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.modalHeader, .modalFooter {
+    padding: 1.5rem;
+}
+
+.modalTitle {
+    margin: 0;
+}
+
+.modalBody {
+    padding: 1.5rem;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.modalBody div {
+    width: 100%;
+}
+
+.modalFooter {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+}
+
+.modalFooter button {
+    border: 3px solid #1464BF;
+}
+
+.modalFooter button:first-child:hover {
+    border: 3px solid #1464BF;
+}
+
+.modalFooter button[type='submit']:hover {
+    border: 3px solid #1464bf;
+    background-color: transparent;
+    color: #1464BF;
+}

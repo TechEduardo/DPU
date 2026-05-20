@@ -1,0 +1,33 @@
+.cardContent {
+    padding: 1rem;
+}
+
+.editUsuario {
+    width: 40% !important;
+    margin: 0 auto;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.form button {
+    margin: 0 auto;
+    border: 3px solid #1464BF;
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    background: #1464BF;
+    cursor: pointer;
+    color: white;
+    padding: .35rem;
+    transition: .5s;
+}
+
+.form button:hover {
+    border: 3px solid #1464bf;
+    background-color: transparent;
+    color: #1464BF;
+}

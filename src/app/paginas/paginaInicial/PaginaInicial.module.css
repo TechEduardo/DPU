@@ -1,0 +1,21 @@
+.section {
+    padding: 3rem;
+    margin: 0 auto;
+    width: 40%;
+}
+
+.welcome {
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
+
+.headerText {
+    font-size: 1.25rem;
+}
+
+.mainText {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}

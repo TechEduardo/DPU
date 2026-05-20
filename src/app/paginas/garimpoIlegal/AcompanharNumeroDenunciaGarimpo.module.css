@@ -1,0 +1,161 @@
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.container div:first-child {
+    padding: 0;
+    margin: 0 1.15rem;
+}
+
+.sectionTitle {
+    width: 100%;
+    line-height: 1.15;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 2.75rem;
+    text-align: center;
+}
+
+.formContainer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.formDescription {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 3rem 2rem 3rem;
+    font-size: 1.35rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.25;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    margin: 2rem 1rem;
+}
+
+.grid div {
+    width: 100%;
+}
+
+.grid div:first-child {
+    grid-column: 1 / 3;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 2rem 1rem;
+}
+
+.row div {
+    width: 100%;
+}
+
+.rowStatus {
+    margin: 2rem;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    font-size: 1.25;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.formButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.formButton button {
+    border: 3px solid #1464BF;
+    border-radius: 50px;
+    width: 100px;
+    height: 50px;
+    background: #1464BF;
+    cursor: pointer;
+    color: white;
+    padding: .35rem;
+    transition: .5s;
+}
+
+.formButton button:first-child {
+    width: initial;
+}
+
+.formButton button:hover {
+    border: 3px solid #1464bf;
+    background-color: transparent;
+    color: #1464BF;
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.loading div {
+    border: 8px solid #f3f3f3; 
+    border-top: 8px solid #1464bf; 
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 800px) {
+    .formContainer {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .formDescription {
+        font-size: 1.25rem;
+    }
+
+    .form {
+        display: block;
+    }
+
+    .form div {
+        margin: .25rem 0;
+    }
+
+    .grid {
+        display: block;
+    }
+    
+    .formButton {
+        padding: 1rem 0 0 0;
+    }
+
+    .formButton button {
+        font-size: .8rem;
+        line-height: 1.5;
+    }
+}

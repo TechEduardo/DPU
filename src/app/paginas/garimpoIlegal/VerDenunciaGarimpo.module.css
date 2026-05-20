@@ -1,0 +1,164 @@
+.cardContent {
+    padding: 1rem;
+}
+
+.headCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.select div {
+    width: 400px;
+}
+
+.gridTop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.gridBottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.anexo {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.anexoHead {
+    width: 100%;
+    background: #efefef;
+    padding: 1rem;
+}
+
+.anexoTitle {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.fotoAnexadas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 1rem;
+    gap: 1rem;
+    width: 100%;
+}
+
+.fotoAnexadas img {
+    max-width: 200px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.semArquivos {
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonVoltar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.buttonVoltar a {
+    text-decoration: none;
+}
+
+.headCard button, .buttonVoltar button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+    gap: .35rem;
+    border: 3px solid #1464BF;
+    width: 200px;
+    height: 50px;
+    background: #1464BF;
+    cursor: pointer;
+    color: white;
+    padding: 1rem 2rem;
+    transition: .5s;
+}
+
+.buttonVoltar button {
+    border-radius: 50px;
+}
+
+.buttonVoltar button:first-child {
+    width: initial;
+}
+
+.headCard button:hover, .buttonVoltar button:hover {
+    border: 3px solid #1464bf;
+    background-color: transparent;
+    color: #1464BF;
+}
+
+@media (max-width: 1350px) {
+    .headCard, .headCard form {
+        display: block;
+    }
+
+    .select > *, .selectStatusLabel {
+        width: 100% !important;
+    }
+
+    .selectStatusLabel {
+        overflow: hidden;
+    }
+
+    .headCard {
+        margin: 0 0 1.5rem 0;
+    }
+
+    .headCard form {
+        margin-bottom: .5rem;
+    }
+
+    .headCard button {
+        margin: 1rem auto;
+    }
+
+    .select {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .cardContent div:last-child div {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: .5rem;
+    }
+
+    .buttonVoltar a {
+        margin: 0 auto;
+    }
+
+    .fotoAnexadas img {
+        max-width: 150px;
+    }
+
+    .verDenunciaSection {
+        padding: 10vh 0 0 0 !important;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 1rem 0;
+}

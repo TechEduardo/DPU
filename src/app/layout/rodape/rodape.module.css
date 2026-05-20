@@ -1,0 +1,9 @@
+
+.rodape{
+    width: 100%;
+    background-color: #424242;
+    color: white;
+    height: 50px;
+    flex-grow: 0;
+}
+
